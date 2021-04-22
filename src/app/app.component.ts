@@ -13,7 +13,6 @@ export class AppComponent {
    *
    */
   constructor(public router: Router) {
-    
   }
 
   public to(link: string): void {

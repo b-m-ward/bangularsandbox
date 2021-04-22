@@ -4,3 +4,8 @@
 <button value="emit!" (click)="testerServ.emit()">emit</button>
 
 <input type="number" [value]="counter">
+
+<div>
+    Favorite Color: <input type="text" [formControl]="favoriteColorReactive">
+    Favorite Genre: <input type="text" [formControl]="favoriteGenreReactive">
+</div>

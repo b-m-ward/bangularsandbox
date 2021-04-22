@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 })
 export class TestingService {
 
-  public emitter: Subject<string> = new Subject();
+  public emitter: Subject<any> = new Subject();
 
 
   constructor() { }
