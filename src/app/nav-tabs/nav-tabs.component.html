@@ -1,0 +1,30 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink><fa-icon [icon]="user"></fa-icon>One</a>
+      <ng-template ngbNavContent>
+        <p>one.</p>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink><fa-icon [icon]="calc"></fa-icon>Two</a>
+      <ng-template ngbNavContent>
+        <p>two.</p>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink><fa-icon [icon]="calendar"></fa-icon>Three</a>
+      <ng-template ngbNavContent>
+          <p>three.</p>
+        
+      </ng-template>
+    </li>
+  </ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+  <div class="mb-3">
+    <button type="button" class="btn btn-primary" (click)="switchTab(false)" >back</button>
+    <span>  -  </span>
+    <button type="button" class="btn btn-info"(click)="switchTab(true)">forward</button>  
+  </div>
